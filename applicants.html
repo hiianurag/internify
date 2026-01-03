@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applicants | Internify</title>
+    <link rel="stylesheet" href="applicants.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Internify</div>
+      <ul class="nav-links">
+        <li><a href="company_dashboard.html">Dashboard</a></li>
+        <li><a href="post_internship.html">Post Internship</a></li>
+        <li><a href="applicants.html" class="active">Applicants</a></li>
+        <li><a href="company_profile.html">Profile</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+
+    <section class="main-section">
+      <h1>Internship Applicants</h1>
+      <p>Click on an applicant to view details.</p>
+
+      <div id="applicantList" class="applicant-list"></div>
+
+      <div id="applicantCard" class="popup-card hidden">
+        <div class="card-box">
+          <h3 id="cName"></h3>
+          <p><strong>Email:</strong> <span id="cEmail"></span></p>
+          <p><strong>Phone:</strong> <span id="cPhone"></span></p>
+          <p><strong>College:</strong> <span id="cCollege"></span></p>
+          <p><strong>Skills:</strong> <span id="cSkills"></span></p>
+          <p><strong>Experience:</strong> <span id="cExp"></span></p>
+          <p><strong>Status:</strong> <span id="cStatus"></span></p>
+
+          <div class="btn-area">
+            <button id="shortBtn" class="btn-shortlist">Shortlist</button>
+            <button id="rejBtn" class="btn-reject">Reject</button>
+          </div>
+
+          <button class="closeCard" onclick="closePopup()">✖ Close</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2025 Internify | All rights reserved</footer>
+
+    <script src="auth.js"></script>
+    <script src="applicants.js"></script>
+  </body>
+</html>

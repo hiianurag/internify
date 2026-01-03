@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Profile | Internify</title>
+    <link rel="stylesheet" href="company_profile.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Internify</div>
+      <ul class="nav-links">
+        <li><a href="company_dashboard.html">Dashboard</a></li>
+        <li><a href="post_internship.html">Post Internship</a></li>
+        <li><a href="applicants.html">Applicants</a></li>
+        <li><a href="company_profile.html" class="active">Profile</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+
+    <section class="main-section">
+      <h1>Company Profile</h1>
+      <p class="sub-text">Manage and update your company information.</p>
+
+      <div class="profile-box">
+        <form id="profileForm">
+          <label>Company Name</label>
+          <input
+            type="text"
+            id="companyName"
+            placeholder="Enter company name"
+          />
+
+          <label>Website (optional)</label>
+          <input type="url" id="website" placeholder="https://example.com" />
+
+          <label>Contact Email</label>
+          <input type="email" id="email" placeholder="company@email.com" />
+
+          <label>About Company</label>
+          <textarea
+            id="about"
+            placeholder="Write about your company..."
+          ></textarea>
+
+          <button type="submit" class="submit-btn">Save Profile</button>
+        </form>
+      </div>
+
+      <div class="preview-box">
+        <h2>Profile Preview</h2>
+        <p><strong>Name:</strong> <span id="prevName">-</span></p>
+        <p><strong>Website:</strong> <span id="prevWebsite">-</span></p>
+        <p><strong>Email:</strong> <span id="prevEmail">-</span></p>
+        <p><strong>About:</strong> <span id="prevAbout">-</span></p>
+      </div>
+    </section>
+
+    <footer>© 2025 Internify | All rights reserved</footer>
+
+    <script src="auth.js"></script>
+    <script src="company_profile.js"></script>
+  </body>
+</html>

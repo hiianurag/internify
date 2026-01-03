@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Internify</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Login to Internify</h1>
+
+      <form id="loginForm">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="password">Password</label>
+        <div class="password-container">
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+          <button type="button" id="togglePassword" class="show-btn">👁️</button>
+        </div>
+
+        <div class="extra-links">
+          <a href="#" id="forgotPassword">Forgot Password?</a>
+        </div>
+
+        <label for="userType">Login As</label>
+        <select id="userType" required>
+          <option value="">-- Select --</option>
+          <option value="intern">Intern</option>
+          <option value="company">Company</option>
+        </select>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p class="signup-link">
+        Don't have an account?
+        <a href="#" id="signupLink">Sign Up</a>
+      </p>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

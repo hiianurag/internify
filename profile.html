@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intern Profile | Internify</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Internify</div>
+      <ul class="nav-links">
+        <li><a href="intern_dashboard.html">Dashboard</a></li>
+        <li><a href="internship.html">Internships</a></li>
+        <li><a href="myapplication.html">My Applications</a></li>
+        <li><a href="profile.html" class="active">Profile</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+
+    <section class="main-section">
+      <h1>Profile</h1>
+      <p class="sub-text">Manage and update your profile details.</p>
+
+      <div class="form-box">
+        <form id="internProfileForm">
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="Your name" />
+          <small class="error"></small>
+
+          <label>Email</label>
+          <input type="email" id="email" placeholder="example@email.com" />
+          <small class="error"></small>
+
+          <label>Phone</label>
+          <input type="tel" id="phone" placeholder="10-digit mobile number" />
+          <small class="error"></small>
+
+          <label>College / Education</label>
+          <input
+            type="text"
+            id="college"
+            placeholder="Your institute / qualification"
+          />
+          <small class="error"></small>
+
+          <label>Skills</label>
+          <input
+            type="text"
+            id="skills"
+            placeholder="HTML, CSS, JavaScript..."
+          />
+          <small class="error"></small>
+
+          <button type="submit" class="save-btn">Save Profile</button>
+        </form>
+      </div>
+
+      <div class="preview-box">
+        <h2>Profile Preview</h2>
+        <p><strong>Name:</strong> <span id="pName">-</span></p>
+        <p><strong>Email:</strong> <span id="pEmail">-</span></p>
+        <p><strong>Phone:</strong> <span id="pPhone">-</span></p>
+        <p><strong>College:</strong> <span id="pCollege">-</span></p>
+        <p><strong>Skills:</strong> <span id="pSkills">-</span></p>
+      </div>
+    </section>
+
+    <footer>© 2025 Internify | All rights reserved</footer>
+
+    <script src="auth.js"></script>
+    <script src="profile.js"></script>
+  </body>
+</html>

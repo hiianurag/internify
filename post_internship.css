@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #2d5783 0%, #f0f2f5 100%);
+}
+
+.navbar {
+  background: hsl(209, 47%, 29%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: hsl(209, 62%, 61%);
+}
+
+.nav-links a.active {
+  background: #f0f2f5;
+  color: #000000;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.main-section {
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.main-section h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.sub-text {
+  color: #2b2911;
+  margin-bottom: 25px;
+}
+
+.form-container {
+  background: #ffffff;
+  width: 55%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+form label {
+  font-weight: 600;
+  color: #333;
+  margin-top: 12px;
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #584e1f;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+  background: #1b3d61;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #315984;
+}
+
+footer {
+  background: hsl(209, 47%, 29%);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}

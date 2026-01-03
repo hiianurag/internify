@@ -1,0 +1,89 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #384d21, #d4d4d4);
+  margin: 0;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.apply-container {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.apply-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+label {
+  font-weight: 600;
+  color: #000000;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  height: 16px;
+  display: block;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #357ab7;
+}
+
+.success-message {
+  display: none;
+  text-align: center;
+  margin-top: 15px;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.status .options {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 5px;
+}
+
+.status .options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}

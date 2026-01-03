@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication System Test</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .subtitle {
+        text-align: center;
+        color: #666;
+        margin-bottom: 30px;
+      }
+
+      .section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        border-left: 4px solid #667eea;
+      }
+
+      .section h2 {
+        color: #667eea;
+        margin-bottom: 15px;
+        font-size: 20px;
+      }
+
+      .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      button {
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary {
+        background: #667eea;
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background: #5568d3;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+      }
+
+      .btn-success {
+        background: #4caf50;
+        color: white;
+      }
+
+      .btn-success:hover {
+        background: #45a049;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+      }
+
+      .btn-danger {
+        background: #f44336;
+        color: white;
+      }
+
+      .btn-danger:hover {
+        background: #da190b;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(244, 67, 54, 0.3);
+      }
+
+      .btn-info {
+        background: #2196f3;
+        color: white;
+      }
+
+      .btn-info:hover {
+        background: #0b7dda;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+      }
+
+      .info-box {
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 15px;
+        border: 1px solid #ddd;
+      }
+
+      .info-box h3 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      .info-box pre {
+        background: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      .status {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: 600;
+        margin-left: 10px;
+      }
+
+      .status.logged-in {
+        background: #4caf50;
+        color: white;
+      }
+
+      .status.logged-out {
+        background: #f44336;
+        color: white;
+      }
+
+      .user-count {
+        background: #2196f3;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: 600;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔐 Authentication System Test Panel</h1>
+      <p class="subtitle">
+        Test and verify the authentication system functionality
+      </p>
+
+      <div class="section">
+        <h2>📊 Current Status</h2>
+        <div class="info-box">
+          <p>
+            <strong>Login Status:</strong>
+            <span id="loginStatus" class="status logged-out"
+              >Not Logged In</span
+            >
+          </p>
+          <p>
+            <strong>Total Users:</strong>
+            <span id="userCount" class="user-count">0</span>
+          </p>
+          <div id="currentUserInfo" style="margin-top: 10px; display: none">
+            <h3>Current User:</h3>
+            <pre id="userDetails"></pre>
+          </div>
+        </div>
+        <div class="button-group">
+          <button class="btn-info" onclick="refreshStatus()">
+            🔄 Refresh Status
+          </button>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>⚡ Quick Actions</h2>
+        <div class="button-group">
+          <button class="btn-primary" onclick="goToLogin()">Login Page</button>
+          <button class="btn-primary" onclick="goToInternSignup()">
+            Intern Signup
+          </button>
+          <button class="btn-primary" onclick="goToCompanySignup()">
+            Company Signup
+          </button>
+          <button class="btn-success" onclick="goToInternDashboard()">
+            Intern Dashboard
+          </button>
+          <button class="btn-success" onclick="goToCompanyDashboard()">
+            Company Dashboard
+          </button>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>👥 Create Test Accounts</h2>
+        <p style="margin-bottom: 15px; color: #666">
+          Click to create pre-configured test accounts
+        </p>
+        <div class="button-group">
+          <button class="btn-success" onclick="createTestIntern()">
+            Create Test Intern
+          </button>
+          <button class="btn-success" onclick="createTestCompany()">
+            Create Test Company
+          </button>
+        </div>
+        <div class="info-box" style="margin-top: 15px">
+          <h3>Test Credentials:</h3>
+          <p><strong>Intern:</strong> intern@test.com / password123</p>
+          <p><strong>Company:</strong> company@test.com / password123</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>🗄️ Data Management</h2>
+        <div class="button-group">
+          <button class="btn-info" onclick="viewAllUsers()">
+            View All Users
+          </button>
+          <button class="btn-info" onclick="viewCurrentUser()">
+            View Current User
+          </button>
+          <button class="btn-danger" onclick="clearAllData()">
+            Clear All Data
+          </button>
+          <button class="btn-danger" onclick="logoutUser()">Logout</button>
+        </div>
+      </div>
+
+      <div class="section" id="allUsersSection" style="display: none">
+        <h2>📋 All Registered Users</h2>
+        <div class="info-box">
+          <pre id="allUsersData"></pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script>
+      function refreshStatus() {
+        const isLoggedIn = Auth.isLoggedIn();
+        const currentUser = Auth.getCurrentUser();
+        const allUsers = Auth.getAllUsers();
+
+        const statusEl = document.getElementById("loginStatus");
+        if (isLoggedIn) {
+          statusEl.textContent = "Logged In";
+          statusEl.className = "status logged-in";
+        } else {
+          statusEl.textContent = "Not Logged In";
+          statusEl.className = "status logged-out";
+        }
+
+        document.getElementById("userCount").textContent = allUsers.length;
+
+        const userInfoDiv = document.getElementById("currentUserInfo");
+        if (isLoggedIn && currentUser) {
+          userInfoDiv.style.display = "block";
+          document.getElementById("userDetails").textContent = JSON.stringify(
+            currentUser,
+            null,
+            2
+          );
+        } else {
+          userInfoDiv.style.display = "none";
+        }
+      }
+
+      function goToLogin() {
+        window.location.href = "login.html";
+      }
+
+      function goToInternSignup() {
+        window.location.href = "intern_signup.html";
+      }
+
+      function goToCompanySignup() {
+        window.location.href = "company_signup.html";
+      }
+
+      function goToInternDashboard() {
+        window.location.href = "intern_dashboard.html";
+      }
+
+      function goToCompanyDashboard() {
+        window.location.href = "company_dashboard.html";
+      }
+
+      function createTestIntern() {
+        const result = Auth.registerUser({
+          name: "Test Intern",
+          email: "intern@test.com",
+          password: "password123",
+          phone: "1234567890",
+          college: "Test University",
+          qualification: "B.Tech",
+          userType: "intern",
+        });
+
+        if (result.success) {
+          Auth.showMessage(
+            "Test intern account created successfully!",
+            "success"
+          );
+        } else {
+          Auth.showMessage(result.message, "error");
+        }
+        refreshStatus();
+      }
+
+      function createTestCompany() {
+        const result = Auth.registerUser({
+          companyName: "Test Company",
+          email: "company@test.com",
+          password: "password123",
+          phone: "9876543210",
+          industry: "IT",
+          location: "Mumbai, Maharashtra",
+          userType: "company",
+        });
+
+        if (result.success) {
+          Auth.showMessage(
+            "Test company account created successfully!",
+            "success"
+          );
+        } else {
+          Auth.showMessage(result.message, "error");
+        }
+        refreshStatus();
+      }
+
+      function viewAllUsers() {
+        const allUsers = Auth.getAllUsers();
+        const section = document.getElementById("allUsersSection");
+        const dataEl = document.getElementById("allUsersData");
+
+        const usersToDisplay = allUsers.map((u) => ({
+          ...u,
+          password: "***hidden***",
+        }));
+
+        dataEl.textContent = JSON.stringify(usersToDisplay, null, 2);
+        section.style.display = "block";
+      }
+
+      function viewCurrentUser() {
+        const user = Auth.getCurrentUser();
+        if (user) {
+          alert(JSON.stringify(user, null, 2));
+        } else {
+          Auth.showMessage("No user is currently logged in", "error");
+        }
+      }
+
+      function clearAllData() {
+        if (
+          confirm(
+            "Are you sure you want to clear all authentication data? This will delete all users and logout."
+          )
+        ) {
+          localStorage.removeItem(Auth.USERS_KEY);
+          localStorage.removeItem(Auth.LOGGED_IN_USER_KEY);
+          localStorage.removeItem(Auth.RESET_EMAIL_KEY);
+          Auth.showMessage("All data cleared successfully!", "success");
+          refreshStatus();
+          document.getElementById("allUsersSection").style.display = "none";
+        }
+      }
+
+      function logoutUser() {
+        if (Auth.isLoggedIn()) {
+          Auth.logout();
+          Auth.showMessage("Logged out successfully!", "success");
+          refreshStatus();
+        } else {
+          Auth.showMessage("No user is currently logged in", "error");
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        refreshStatus();
+      });
+    </script>
+  </body>
+</html>

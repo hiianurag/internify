@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #2d5783 0%, #f0f2f5 100%);
+}
+
+.navbar {
+  background: hsl(209, 47%, 29%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: hsl(209, 62%, 61%);
+}
+
+.nav-links a.active {
+  background: white;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.main-section {
+  width: 100%;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.applicant-list {
+  margin: 30px auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.applicant-box {
+  background: rgba(255, 255, 255, 0.14);
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: white;
+}
+
+.applicant-box:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.popup-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.card-box {
+  background: white;
+  color: black;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+  text-align: left;
+}
+
+.btn-area {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn-shortlist {
+  background: #1d8b31;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+}
+
+.btn-reject {
+  background: #cf2020;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+}
+
+.closeCard {
+  margin-top: 20px;
+  background: #444;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+footer {
+  background: hsl(209, 47%, 29%);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}

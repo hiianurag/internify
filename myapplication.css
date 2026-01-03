@@ -1,0 +1,100 @@
+.navbar {
+  background: #584e1f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #b1a54b;
+}
+
+.nav-links .active {
+  background: #f0f2f5;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #4b4118 0%, #f0f2f5 100%);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.applications-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 40px;
+}
+
+.application-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.application-card:hover {
+  transform: translateY(-5px);
+}
+
+.status {
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.status.pending {
+  background: #f0da82;
+  color: #7a6d00;
+}
+
+.status.shortlisted {
+  background: #9cd49c;
+  color: #256d1b;
+}
+
+.status.rejected {
+  background: #f8a4a4;
+  color: #8b0000;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  background-color: #584e1f;
+  color: white;
+  position: relative;
+  bottom: 0;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Internship | Internify</title>
+    <link rel="stylesheet" href="post_internship.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Internify</div>
+      <ul class="nav-links">
+        <li><a href="company_dashboard.html">Dashboard</a></li>
+        <li>
+          <a href="post_internship.html" class="active">Post Internship</a>
+        </li>
+        <li><a href="applicants.html">Applicants</a></li>
+        <li><a href="company_profile.html">Profile</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+
+    <section class="main-section">
+      <h1>Post a New Internship</h1>
+      <p class="sub-text">
+        Fill the details below to create a new internship posting.
+      </p>
+
+      <div class="form-container">
+        <form id="internshipForm">
+          <label>Company Name</label>
+          <input
+            type="text"
+            id="companyName"
+            placeholder="Enter company name"
+            required
+          />
+
+          <label>Internship Title / Field</label>
+          <input
+            type="text"
+            id="title"
+            placeholder="Enter internship title"
+            required
+          />
+
+          <label>Required Skills</label>
+          <input type="text" id="skills" placeholder="Skills" required />
+
+          <label>Duration</label>
+          <input
+            type="number"
+            id="duration"
+            placeholder="Months"
+            min="0"
+            max="12"
+            required
+          />
+
+          <label>Stipend (₹)</label>
+          <input type="number" id="stipend" placeholder="e.g., 5000" />
+
+          <button type="submit" class="submit-btn">Post Internship</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>© 2025 Internify | All rights reserved</footer>
+
+    <script src="auth.js"></script>
+    <script src="post_internship.js"></script>
+  </body>
+</html>

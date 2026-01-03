@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Dashboard | Internify</title>
+    <link rel="stylesheet" href="company_dashboard.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Internify</div>
+      <ul class="nav-links">
+        <li><a href="company_dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="post_internship.html">Post Internship</a></li>
+        <li><a href="applicants.html">Applicants</a></li>
+        <li><a href="company_profile.html">Profile</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+
+    <section class="main-section">
+      <h1>Welcome Back, Company!</h1>
+      <p class="sub-text">
+        Here’s a quick overview of your posted internships.
+      </p>
+
+      <div class="stats-box">
+        <div class="stat-card">
+          <h3>Total Internships Posted</h3>
+          <span class="value" id="totalPosts">0</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>Total Applicants</h3>
+          <span class="value" id="totalApplicants">0</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>Active Internships</h3>
+          <span class="value" id="activePosts">0</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>Closed Internships</h3>
+          <span class="value" id="closedPosts">0</span>
+        </div>
+      </div>
+
+      <h2 class="recent-heading">Recent Activity</h2>
+
+      <div class="recent-container" id="recentContainer"></div>
+    </section>
+
+    <footer>© 2025 Internify | All rights reserved</footer>
+
+    <script src="auth.js"></script>
+    <script src="company_dashboard.js"></script>
+  </body>
+</html>

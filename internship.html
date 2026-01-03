@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internships | Internify</title>
+    <link rel="stylesheet" href="internship.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Internify</div>
+      <ul class="nav-links">
+        <li><a href="intern_dashboard.html">Dashboard</a></li>
+        <li><a href="internship.html" class="active">Internships</a></li>
+        <li><a href="myapplication.html">My Applications</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Find Your Internship</h1>
+      <p>Explore available opportunities and apply easily</p>
+    </header>
+    <div class="search-bar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by skill or field..."
+      />
+    </div>
+    <div class="internship-container" id="internshipContainer"></div>
+
+    <footer>&copy; 2025 Internify. All rights reserved.</footer>
+
+    <script src="auth.js"></script>
+    <script src="internship.js"></script>
+  </body>
+</html>

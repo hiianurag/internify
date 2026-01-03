@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intern Dashboard | Internify</title>
+    <link rel="stylesheet" href="intern_dashboard.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Internify</div>
+      <ul class="nav-links">
+        <li><a href="intern_dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="internship.html">Internships</a></li>
+        <li><a href="myapplication.html">My Applications</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+
+    <section class="main-section">
+      <h1>Welcome, Intern!</h1>
+      <p class="sub-text">
+        Here's a quick overview of your internship journey.
+      </p>
+
+      <div class="stats-box">
+        <div class="stat-card">
+          <h3>Total Applications</h3>
+          <span class="value" id="totalApps">0</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>Shortlisted</h3>
+          <span class="value" id="shortlisted">0</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>Pending</h3>
+          <span class="value" id="pending">0</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>Rejected</h3>
+          <span class="value" id="rejected">0</span>
+        </div>
+      </div>
+
+      <h2 class="recent-heading">Recent Activity</h2>
+
+      <div class="recent-container" id="recentContainer"></div>
+    </section>
+
+    <footer>© 2025 Internify | All rights reserved</footer>
+
+    <script src="auth.js"></script>
+    <script src="intern_dashboard.js"></script>
+  </body>
+</html>
