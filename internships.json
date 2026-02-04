@@ -1,0 +1,302 @@
+[
+  {
+    "id": "mock_1",
+    "company": "TechCorp",
+    "title": "Frontend Developer Intern",
+    "skills": "HTML, CSS, JavaScript, React",
+    "duration": "3 months",
+    "stipend": "12,000",
+    "status": "Open",
+    "postedDate": "2025-02-01"
+  },
+  {
+    "id": "mock_2",
+    "company": "InnovateAI",
+    "title": "Machine Learning Intern",
+    "skills": "Python, TensorFlow, PyTorch, SQL",
+    "duration": "6 months",
+    "stipend": "20,000",
+    "status": "Open",
+    "postedDate": "2025-01-28"
+  },
+  {
+    "id": "mock_3",
+    "company": "CreativeStudio",
+    "title": "UI/UX Designer",
+    "skills": "Figma, Adobe XD, Prototyping",
+    "duration": "2 months",
+    "stipend": "8,000",
+    "status": "Open",
+    "postedDate": "2025-02-02"
+  },
+  {
+    "id": "mock_4",
+    "company": "DataFlow Systems",
+    "title": "Backend Developer",
+    "skills": "Node.js, Express, MongoDB, API",
+    "duration": "4 months",
+    "stipend": "15,000",
+    "status": "Open",
+    "postedDate": "2025-01-30"
+  },
+  {
+    "id": "mock_5",
+    "company": "MarketGurus",
+    "title": "Digital Marketing Intern",
+    "skills": "SEO, Social Media, Content Writing",
+    "duration": "3 months",
+    "stipend": "10,000",
+    "status": "Open",
+    "postedDate": "2025-02-03"
+  },
+  {
+    "id": "mock_6",
+    "company": "CyberSecure",
+    "title": "Cybersecurity Analyst",
+    "skills": "Network Security, Linux, Python",
+    "duration": "6 months",
+    "stipend": "18,000",
+    "status": "Open",
+    "postedDate": "2025-01-25"
+  },
+  {
+    "id": "mock_7",
+    "company": "CloudNine",
+    "title": "Cloud Engineering Intern",
+    "skills": "AWS, Docker, Kubernetes",
+    "duration": "5 months",
+    "stipend": "22,000",
+    "status": "Open",
+    "postedDate": "2025-02-01"
+  },
+  {
+    "id": "mock_8",
+    "company": "FinTech Solutions",
+    "title": "Data Analyst",
+    "skills": "Excel, PowerBI, SQL, Python",
+    "duration": "3 months",
+    "stipend": "14,000",
+    "status": "Open",
+    "postedDate": "2025-01-29"
+  },
+  {
+    "id": "mock_9",
+    "company": "EduTech Global",
+    "title": "Content Writer",
+    "skills": "English, Copywriting, Research",
+    "duration": "2 months",
+    "stipend": "5,000",
+    "status": "Open",
+    "postedDate": "2025-02-04"
+  },
+  {
+    "id": "mock_10",
+    "company": "Green Energy",
+    "title": "Research Associate",
+    "skills": "Research, Data Analysis, Reporting",
+    "duration": "4 months",
+    "stipend": "11,000",
+    "status": "Open",
+    "postedDate": "2025-01-20"
+  },
+  {
+    "id": "mock_11",
+    "company": "MobileMinds",
+    "title": "Android Developer",
+    "skills": "Java, Kotlin, Android Studio",
+    "duration": "3 months",
+    "stipend": "13,000",
+    "status": "Open",
+    "postedDate": "2025-02-01"
+  },
+  {
+    "id": "mock_12",
+    "company": "MobileMinds",
+    "title": "iOS Developer",
+    "skills": "Swift, iOS, Xcode",
+    "duration": "3 months",
+    "stipend": "13,000",
+    "status": "Open",
+    "postedDate": "2025-02-01"
+  },
+  {
+    "id": "mock_13",
+    "company": "GameChangers",
+    "title": "Game Developer",
+    "skills": "Unity, C#, 3D Modeling",
+    "duration": "6 months",
+    "stipend": "16,000",
+    "status": "Open",
+    "postedDate": "2025-01-22"
+  },
+  {
+    "id": "mock_14",
+    "company": "PixelPerfect",
+    "title": "Graphic Designer",
+    "skills": "Photoshop, Illustrator, InDesign",
+    "duration": "2 months",
+    "stipend": "7,000",
+    "status": "Open",
+    "postedDate": "2025-02-03"
+  },
+  {
+    "id": "mock_15",
+    "company": "PeopleFirst",
+    "title": "HR Intern",
+    "skills": "Communication, Management, Excel",
+    "duration": "3 months",
+    "stipend": "8,000",
+    "status": "Open",
+    "postedDate": "2025-01-28"
+  },
+  {
+    "id": "mock_16",
+    "company": "StartUp Hub",
+    "title": "Business Development",
+    "skills": "Sales, Communication, Strategy",
+    "duration": "3 months",
+    "stipend": "10,000 + Incentives",
+    "status": "Open",
+    "postedDate": "2025-02-02"
+  },
+  {
+    "id": "mock_17",
+    "company": "AutoTech",
+    "title": "Embedded Systems Intern",
+    "skills": "C, C++, Microcontrollers",
+    "duration": "6 months",
+    "stipend": "18,000",
+    "status": "Open",
+    "postedDate": "2025-01-25"
+  },
+  {
+    "id": "mock_18",
+    "company": "LegalEase",
+    "title": "Legal Intern",
+    "skills": "Legal Research, Drafting, Law",
+    "duration": "2 months",
+    "stipend": "6,000",
+    "status": "Open",
+    "postedDate": "2025-01-30"
+  },
+  {
+    "id": "mock_19",
+    "company": "HealthPlus",
+    "title": "Operations Intern",
+    "skills": "Management, Logistics, Excel",
+    "duration": "3 months",
+    "stipend": "9,000",
+    "status": "Open",
+    "postedDate": "2025-02-01"
+  },
+  {
+    "id": "mock_20",
+    "company": "VideoVibe",
+    "title": "Video Editor",
+    "skills": "Premiere Pro, After Effects",
+    "duration": "2 months",
+    "stipend": "10,000",
+    "status": "Open",
+    "postedDate": "2025-01-29"
+  },
+  {
+    "id": "mock_21",
+    "company": "WebWizards",
+    "title": "Full Stack Developer",
+    "skills": "MERN Stack, JavaScript, AWS",
+    "duration": "6 months",
+    "stipend": "25,000",
+    "status": "Open",
+    "postedDate": "2025-02-04"
+  },
+  {
+    "id": "mock_22",
+    "company": "NextGen Robotics",
+    "title": "Robotics Engineer",
+    "skills": "ROS, C++, Python, Control Systems",
+    "duration": "5 months",
+    "stipend": "20,000",
+    "status": "Open",
+    "postedDate": "2025-01-27"
+  },
+  {
+    "id": "mock_23",
+    "company": "CryptoSafe",
+    "title": "Blockchain Developer",
+    "skills": "Solidity, Ethereum, Smart Contracts",
+    "duration": "4 months",
+    "stipend": "28,000",
+    "status": "Open",
+    "postedDate": "2025-02-01"
+  },
+  {
+    "id": "mock_24",
+    "company": "BrandBoost",
+    "title": "Social Media Manager",
+    "skills": "Instagram, LinkedIn, Analytics",
+    "duration": "3 months",
+    "stipend": "9,000",
+    "status": "Open",
+    "postedDate": "2025-02-03"
+  },
+  {
+    "id": "mock_25",
+    "company": "CodeAcademy",
+    "title": "Teaching Assistant",
+    "skills": "Java, Python, Teaching",
+    "duration": "4 months",
+    "stipend": "12,000",
+    "status": "Open",
+    "postedDate": "2025-01-20"
+  },
+  {
+    "id": "mock_26",
+    "company": "TravelBug",
+    "title": "Travel Consultant",
+    "skills": "Communication, Geography, Sales",
+    "duration": "3 months",
+    "stipend": "8,000",
+    "status": "Open",
+    "postedDate": "2025-01-28"
+  },
+  {
+    "id": "mock_27",
+    "company": "EventHorizon",
+    "title": "Event Planner",
+    "skills": "Management, Planning, Coordination",
+    "duration": "2 months",
+    "stipend": "7,000",
+    "status": "Open",
+    "postedDate": "2025-02-02"
+  },
+  {
+    "id": "mock_28",
+    "company": "ConstructIt",
+    "title": "Civil Engineering Intern",
+    "skills": "AutoCAD, Structural Analysis",
+    "duration": "4 months",
+    "stipend": "11,000",
+    "status": "Open",
+    "postedDate": "2025-01-25"
+  },
+  {
+    "id": "mock_29",
+    "company": "BioLife",
+    "title": "Biotech Researcher",
+    "skills": "Lab Skills, Biology, Chemistry",
+    "duration": "6 months",
+    "stipend": "15,000",
+    "status": "Open",
+    "postedDate": "2025-01-30"
+  },
+  {
+    "id": "mock_30",
+    "company": "FinancePro",
+    "title": "Investment Analyst",
+    "skills": "Finance, Modeling, Valuation",
+    "duration": "3 months",
+    "stipend": "18,000",
+    "status": "Open",
+    "postedDate": "2025-02-04"
+  }
+]

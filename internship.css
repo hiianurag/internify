@@ -120,3 +120,39 @@ footer {
   padding: 18px;
   margin-top: 40px;
 }
+
+/* --- Smart Match AI Styles --- */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.card-header h3 {
+  margin: 0; /* Override default margin */
+  flex: 1;
+}
+
+.match-badge {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+.match-high {
+  background-color: #2e7d32; /* Green */
+}
+
+.match-medium {
+  background-color: #ed6c02; /* Orange */
+}
+
+.match-low {
+  background-color: #d32f2f; /* Red */
+}
+/* ----------------------------- */
